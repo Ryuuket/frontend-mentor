@@ -7,8 +7,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="mobile.css">
+  <!-- Kit fontawesome-->
+  <script src="https://kit.fontawesome.com/aaece9f3aa.js" crossorigin="anonymous"></script>
   
-  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  <title>Frontend Mentor | Huddle landing page with curved divs</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -18,91 +21,102 @@
 </head>
 <body>
   <header>
-    <img class="logo" src="images/logo.svg" alt="Image du logo Huddle, une bulle avec des points de suspension suivie du nom Huddle."/>
-    <input type="button" value="Try it Free"/>
+    <img src="images/logo.svg" alt="Image du logo Huddle, une bulle avec des points de suspension suivie du nom Huddle."/>
+    <button>Try it Free</button>
   </header>
 
   <aside>
     <h1>Build The Community Your Fans Will Love</h1>
 
-    <p class="intro">Huddle re-imagines the way we build communities. You have a voice, but so does 
+    <p id="intro">Huddle re-imagines the way we build communities. You have a voice, but so does 
     your audience. Create connections with your users as you engage in genuine discussion.</p>
 
-    <button class="menuButton" type="button" value="start">Get Started For Free</button>
+    <button class="menuButton">Get Started For Free</button>
 
-    <p><img class="mockup" src="images/screen-mockups.svg" alt="Une image du rendu visuel du site. Il y a une page avec un bandeau en haut, cercles accompagnés de lignes de texte, et d'une autre page déployée avec un autre bandeau, 8 cercles et zones de texte. Dans les bandeaux, il y a une barre de recherche à gauche et trois barres horizontales à droite, invitant à développer un menu contenant les paramètres de l'application par exemple."></p>
-    <section class="values">
-      <section class="value">
-        <p><img class="icon" src="images/icon-communities.svg" alt="Icône de trois personnes se tiennent côte à côte."/></p>
-        <p>1.4k+</p>
-        <p>Communities Formed</p>
-      </section>
+    <img class="mockup" src="images/screen-mockups.svg" alt="Une image du rendu visuel du site. Il y a une page avec un bandeau en haut, cercles accompagnés de lignes de texte, et d'une autre page déployée avec un autre bandeau, 8 cercles et zones de texte. Dans les bandeaux, il y a une barre de recherche à gauche et trois barres horizontales à droite, invitant à développer un menu contenant les paramètres de l'application par exemple.">
+    <div id="values">
+      <div class="value">
+        <img src="images/icon-communities.svg" alt="Icône de trois personnes se tiennent côte à côte."/>
+        <p class="value-number">1.4k+</p>
+        <p class="value-title">Communities Formed</p>
+      </div>
 
-      <section class="value">
-        <p><img class="icon" src="images/icon-messages.svg" alt="Icône d'une bulle contenant des points de suspension."/></p>
-        <p>2.7m+</p>
-        <p>Messages Sent</p>
-      </section>
-    </section>
+      <div class="value">
+        <img src="images/icon-messages.svg" alt="Icône d'une bulle contenant des points de suspension."/>
+        <p class="value-number">2.7m+</p>
+        <p class="value-title">Messages Sent</p>
+      </div>
+    </div>
   </aside>
 
   <main>
-    <section class="oddArg">
-      <section class="text">
+    <img class="bluewave-top" src="images/bg-section-top-desktop-1.svg" alt="Fond bleu formant une vague."/>
+    <div class="oddArg">
+      <div class="text">
         <h2>Grow Together</h2>
         <p class="details">Generate meaningful discussions with your audience and build a strong, loyal community. 
         Think of the insightful conversations you miss out on with a feedback form.<p>
-      </section>
-      <img src="images/illustration-grow-together.svg" alt="Deux personnes discutent ensemble. Des messages de l'application sont entre elles pour l'illustrer. La femme se base sur ses notes manuscrites."/>
-    </section>
-
-    <section class="evenArg">
-      <section class="text">
+      </div>
+      <img class="illustration" src="images/illustration-grow-together.svg" alt="Deux personnes discutent ensemble. Des messages de l'application sont entre elles pour l'illustrer. La femme se base sur ses notes manuscrites."/>
+    </div>
+    <img class="bluewave-bot" src="images/bg-section-bottom-desktop-1.svg" alt="Fond bleu formant une vague."/>
+    
+    <div id="evenArg">
+      <div class="text">
         <h2>Flowing Conversations</h2>
         <p class="details">You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
         just-in-time loading for a more natural flow.<p>
-      </section>
-      <img src="images/illustration-flowing-conversation.svg" alt="quamtre personnes sont assises, dehors, à une table. Une femme boit un café."/>
-    </section>
-
-    <section class="oddArg">
-      <section class="text">
+      </div>
+      <img class="illustration" src="images/illustration-flowing-conversation.svg" alt="quamtre personnes sont assises, dehors, à une table. Une femme boit un café."/>
+    </div>
+    
+    <img class="bluewave-top" src="images/bg-section-top-desktop-1.svg" alt="Fond bleu formant une vague."/>
+    <div class="oddArg">
+      <div class="text">
       <h2>Your Users</h2>
         <p class="details">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
         once signed in to your app, your users can start chatting immediately.<p>
-      </section>
-      <img src="images/illustration-your-users.svg" alt="Trois personnes se trouvent devant une bulle de message, et entre elles se trouvent trois cercles blancs dans le vide."/>
-    </section>
+      </div>
+      <img class="illustration" src="images/illustration-your-users.svg" alt="Trois personnes se trouvent devant une bulle de message, et entre elles se trouvent trois cercles blancs dans le vide."/>
+    </div>
+    <img class="bluewave-bot" src="images/bg-section-bottom-desktop-1.svg" alt="Fond bleu formant une vague."/>
 
-    <h1>Ready To Build Your Community</h1>
-    <button class="mainButton" type="button" value="start">Get Started For Free</button>
+    <div class="pageEnd">
+      <h1>Ready To Build Your Community</h1>
+      <button class="menuButton">Get Started For Free</button>
+    </div>
+    <img id="footBackground" src="images/bg-footer-top-desktop.svg" alt="Vague de changement de couleur uniquement pour le design.">
   </main>
-  <section>
-    <img src="images/bg-footer-top-desktop.svg" alt="Vague de changement de couleur uniquement pour le design.">
-  </section>
   <footer>
-    <section class="infos">
-      <section>
-        <p><img class="logo" src="images/logo.svg" alt="Image du logo Huddle, une bulle avec des points de suspension suivie du nom Huddle."/></p>
-        <p class="infos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-        vestibulum a, ultrices quis sem.</p>
-        
-        <p class="infos"><img class="icon" src="images/icon-phone.svg" alt="Icône d'un téléphone."/>Phone: +1-543-123-4567</p>
-        <p class="infos"><img class="icon" src="images/icon-email.svg" alt="Icône d'une lettre ou d'un email."/>example@huddle.com</p>
-      </section>
+    <div class="info">
+      <img id="logo-footer" src="images/logo.svg" alt="Image du logo Huddle, une bulle avec des points de suspension suivie du nom Huddle."/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+      vestibulum a, ultrices quis sem.</p>
+      <div class="contact">
+        <img class="icon" src="images/icon-phone.svg" alt="Icône d'un téléphone.">
+        <p>Phone: +1-543-123-4567</p>
+      </div>
+      <div class="contact">
+        <img class="icon" src="images/icon-email.svg" alt="Icône d'une lettre ou d'un email.">
+        <p>example@huddle.com</p>
+      </div>
+      <div class="contact">
+        <span class="icone-reseau"><i class="fa-brands fa-square-facebook"></i></span>
+        <span class="icone-reseau"><i class="fa-brands fa-instagram"></i></span>
+        <span class="icone-reseau"><i class="fa-brands fa-square-twitter"></i></span>
+      </div>
+    </div>
 
-      <section>
-        <h3>Newsletter</h3>
-        <p class="infos">To receive tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-        send you spam or pass on your email address.</p>
-        
-        <button class="mainButton" type="button" value="subscribe">Subscribe</button>
-      </section>
-    </section>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Axel</a>.
-    </p>
+    <div class="info">
+      <h3>NEWSLETTER</h3>
+      <p>To receive tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+      send you spam or pass on your email address.</p>
+      
+      <form action="" method="get" class="subscribing">
+        <input name="email" placeholder="KOKIA@mail.com">
+        <button>Subscribe</button>
+      </form>
+    </div>
   </footer>
 </body>
 </html>
